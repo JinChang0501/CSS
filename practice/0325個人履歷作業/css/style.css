@@ -20,6 +20,8 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
+    z-index: 3;
 
 }
 
@@ -87,12 +89,14 @@ ol {
 }
 
 .sec1 {
-    /* background-color: #82bef2; */
+    background-color: rgb(237, 237, 237);
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 50px;
-
+    /* 讓三角形不會顯示到區塊上 */
+    position: relative;
+    z-index: 3;
 }
 
 .photo {
@@ -118,6 +122,9 @@ ol {
     font-size: 36px;
     text-shadow: 0 0 5px white;
     margin-bottom: 20px;
+    /* 讓圓形顯示到區塊上 */
+    position: relative;
+    z-index: 5;
 }
 
 .description p {
@@ -142,8 +149,9 @@ ol {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
+
 
 .title {
     position: absolute;
@@ -210,7 +218,6 @@ ol {
     border-width: 0 225px 389.7px 225px;
     border-color: transparent transparent #82beff transparent;
     animation: spin 10s ease-in infinite alternate;
-
 }
 
 
@@ -226,18 +233,19 @@ ol {
 
 .circle {
     position: absolute;
-    top: 300px;
+    top: 250px;
     right: 200px;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #82bef2;
-    animation: myAnim 5s ease-in infinite alternate;
+    animation: myAnim 2s ease-in infinite alternate;
     width: 300px;
     height: 300px;
     background-color: rgb(237, 237, 237);
     border-radius: 50%;
     border: 10px solid orange;
+    z-index: 4;
 }
 
 @keyframes myAnim {
@@ -280,7 +288,7 @@ ol {
     width: 100px;
     height: 150px;
     background-color: rgb(237, 237, 237);
-    border: 15px solid rgb(97, 236, 171);
+    border: 10px solid rgb(97, 236, 171);
     border-radius: 20px;
     /* transform: rotate(45deg); */
     animation: heartbeat 2s ease-in infinite alternate;
