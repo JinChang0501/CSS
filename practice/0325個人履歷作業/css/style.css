@@ -72,6 +72,7 @@ body {
     /* background-color: aqua; */
     /*這個屬性讓它置中*/
     margin: auto;
+    justify-content: center;
 
 }
 
@@ -86,8 +87,7 @@ ol {
 }
 
 .sec1 {
-    /* background-color: rgb(237, 237, 237); */
-    background-color: #82bef2;
+    /* background-color: #82bef2; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -95,43 +95,34 @@ ol {
 
 }
 
-.ol1 {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    justify-content: space-around;
-}
-
-.ol1 div {
-    height: 800px;
-    display: flex;
-    /* justify-content: center; */
-    /* align-items: center; */
-    font-size: 30px;
-    background-color: pink;
-}
-
 .photo {
     width: 40%;
-    border: 2px solid black;
     height: auto;
-    max-width: 100%;
-    box-shadow: -15px 15px 0px rgb(226, 162, 238);
+    /* background-color: #cfeb12; */
+    margin-right: 10%;
 }
 
 .photo img {
-    height: 100%;
-    width: 100%;
+    max-width: 100%;
+    box-shadow: -15px 15px 0px rgb(226, 162, 238);
 }
 
 .description {
     width: 50%;
     height: auto;
-    display: flex;
-    flex-direction: column;
-    margin: 0;
-    padding: 0;
+
+    /* background-color: #8b0f9f; */
+}
+
+.description h3 {
+    font-size: 36px;
+    text-shadow: 0 0 5px white;
+    margin-bottom: 20px;
+}
+
+.description p {
+    font-size: 18px;
+    margin-bottom: 20px;
 }
 
 .sec2 {
