@@ -1,0 +1,40 @@
+<html>
+
+<head>
+    <title>導覽列</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        .phoneli01 {
+            width: 250px;
+            height: 50px;
+            text-align: center;
+            line-height: 50px;
+            list-style-type: none;
+            background-color: orange;
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <i class="fa-solid fa-bars" style="font-size:48px;color:blue;" id="btn1"></i>
+    <ul id="nav">
+        <li class="phoneli01"><a class="one" href="#">首頁</a></li>
+        <li class="phoneli01"><a class="one" href="#">最新消息</a></li>
+        <li class="phoneli01"><a class="one" href="#">關於我們</a></li>
+        <li class="phoneli01"><a class="one" href="#">聯絡我們</a></li>
+        <li class="phoneli01"><a class="one" href="#"> Q & A</a></li>
+    </ul>
+</body>
+
+</html>
+<script>
+    $(document).ready(function () {
+        $("#btn1").click(function () {
+            $("#nav").toggle();
+
+        });
+    });
+</script>

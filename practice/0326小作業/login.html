@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login表單</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: rgb(53, 53, 53);
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+        }
+
+        .sec {
+            width: 300px;
+            margin: 50px auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .form {
+            position: relative;
+            width: 100%;
+            background-color: aquamarine;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 20px;
+            border-top-left-radius: 15px;
+        }
+
+        .form h2 {
+            margin-bottom: 20px;
+            font-size: 20px;
+            font-weight: 600;
+            text-align: center;
+        }
+
+        .form input {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            text-indent: 5px;
+            height: 30px;
+            border: none;
+        }
+
+        .btn {
+            width: 25%;
+        }
+
+        .btn-confirm {
+            background-image: linear-gradient(to right, #ffa600, #f7b800, #edc900, #e0da00, #cfeb12);
+            color: white;
+            border-radius: 5px;
+            padding: 5px 10px 5px 10px;
+            border: none;
+            box-shadow: 0 0 5px lightgray;
+        }
+
+        .btn p {
+            position: absolute;
+            right: 20px;
+            bottom: 35px;
+            font-size: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="sec">
+            <div class="form">
+                <h2>Login Information</h2>
+                <form action="#">
+                    <label for="Name"></label>
+                    <input type="text" name="name" id="Name" placeholder="Enter Username">
+                    <label for="Pwd"></label>
+                    <input type="password" name="pwd" id="Pwd" placeholder="Enter password">
+                    <div class="btn">
+                        <input type="submit" class="btn-confirm" value="Log in">
+                        <p>Forget Your Password?</p>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Icon</title>
+    <style>
+        .menu {
+            border: 1em solid rgb(72, 180, 239);
+            background-color: brown;
+            width: 3em;
+            height: 3em;
+            margin: 5em auto;
+            position: relative;
+            cursor: pointer;
+        }
+
+        .menu::after {
+            content: "";
+            position: absolute;
+            top: 1em;
+
+            left: calc((3em - 1.5em) / 2);
+            width: 1.5em;
+            height: 0.2em;
+            border-top: 0.6em double #c5ea1e;
+            border-bottom: 0.2em solid #fff;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="menu"></div>
+</body>
+
+</html>

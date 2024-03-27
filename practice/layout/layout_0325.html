@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            height: 100px;
+        }
+
+        .flex {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .nav {
+            display: flex;
+            align-items: center;
+        }
+
+        .menu {
+            display: flex;
+            list-style: none;
+            float: right;
+
+
+        }
+
+        .menu li a {
+            text-decoration: none;
+            font-weight: 600;
+            margin-right: 20px;
+            font-size: 18px;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+        }
+
+        h2 {
+            text-align: center;
+            margin-top: 35px;
+            margin-bottom: 65px;
+        }
+
+        .des {
+            display: flex;
+            font-weight: 800;
+            border-bottom: 1px dashed black;
+            margin-bottom: 15px;
+            padding-bottom: 15px;
+        }
+
+        .date {
+            font-size: 18px;
+            margin-right: 20px;
+        }
+
+        .box2 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1.25rem;
+
+        }
+
+        .img img {
+            width: 300px;
+            height: 250px;
+            padding: 20px;
+        }
+
+        .box2 .img:nth-child(1) {
+            background-color: aqua;
+        }
+
+        .box2 .img:nth-child(2) {
+            background-color: blanchedalmond;
+        }
+
+        .box2 .img:nth-child(3) {
+            background-color: lightsalmon;
+        }
+
+        figcaption {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 18px;
+            font-weight: 600;
+            padding-bottom: 20px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <div class="flex">
+            <div class="logo"><img src="imgs/logo.png" alt=""></div>
+            <div class="nav">
+                <ol class="menu">
+                    <li><a href="#">最新消息</a></li>
+                    <li><a href="#">產品介紹</a></li>
+                    <li><a href="#">聯絡我們</a></li>
+                </ol>
+            </div>
+        </div>
+    </header>
+    <hr>
+    <section>
+        <div class="container">
+            <h2>最新消息</h2>
+            <div class="des">
+                <div class="date">2023-06-23</div>
+                <p>新品上市</p>
+            </div>
+            <div class="des">
+                <div class="date">2023-06-23</div>
+                <p>新品上市</p>
+            </div>
+            <div class="des">
+                <div class="date">2023-06-23</div>
+                <p>新品上市</p>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <h2>產品分類</h2>
+            <div class="box2">
+                <figure class="img">
+                    <img src="imgs/cake-cover.jpg" alt="cake-cover.jpg">
+                    <figcaption>
+                        <p>蛋糕</p>
+                    </figcaption>
+                </figure>
+                <figure class="img">
+                    <img src="imgs/bread.jpg" alt="cake-cover.jpg">
+                    <figcaption>蛋糕</figcaption>
+                </figure>
+                <figure class="img">
+                    <img src="imgs/dessert.jpg" alt="cake-cover.jpg">
+                    <figcaption>蛋糕</figcaption>
+                </figure>
+            </div>
+        </div>
+    </section>
+    <footer></footer>
+</body>
+
+</html>

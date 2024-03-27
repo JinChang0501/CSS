@@ -1,0 +1,94 @@
+/* 全域  手機*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
+}
+
+#banner {
+    width: 100%;
+    background: url(../images/phone/Photo.jpg) no-repeat;
+    height: 353px;
+    border-bottom-left-radius: 50px;
+}
+
+.hero h2 {
+    font-size: 3rem;
+    font-family: "DM Serif Display";
+    letter-spacing: 1px;
+}
+
+.hero p {
+    font-size: 16px;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.btn-black {
+    font-size: 1.125rem;
+    color: white;
+    background-color: black;
+    padding: 0.8rem 2rem;
+    border-radius: 18px;
+    border: none;
+    letter-spacing: 1px;
+
+    font-family: "Jost";
+    line-height: 22.5px;
+}
+
+.fa-arrow-right {
+    color: #CDA274;
+    font-size: 20px;
+}
+
+@media screen and (min-width: 481px) {
+    #banner {
+        background: url(../images/tablet/Photo.jpg) no-repeat;
+        height: 445px;
+        border-bottom-left-radius: 150px;
+    }
+
+    .hero {
+        width: 50%;
+    }
+
+    .btn-black {
+        padding: 1.625rem 3rem;
+    }
+}
+
+@media screen and (min-width: 821px) {
+    #banner {
+        background: url(../images/Photo.jpg) no-repeat;
+        height: 880px;
+        border-bottom-left-radius: 291px;
+    }
+
+    .container {
+        width: 80%;
+        max-width: 1200px;
+        margin: auto;
+    }
+
+    .hero h2 {
+        font-size: 5rem;
+    }
+
+    .hero p {
+        font-size: 2.0625rem;
+    }
+
+
+}

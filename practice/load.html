@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loading cursor</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: black;
+        }
+
+        .container {
+            width: 200px;
+            height: 100px;
+            padding-top: 100px;
+            margin: 0 auto;
+        }
+
+        .bar {
+            width: 100px;
+            height: 10px;
+            margin: 10px auto;
+            border-radius: 10px;
+        }
+
+        .bar:nth-child(1) {
+            background-color: #845EC2;
+            animation: left 1.2s ease-in infinite alternate;
+        }
+
+        .bar:nth-child(2) {
+            background-color: #D65DB1;
+            animation: right 1.1s ease-in infinite alternate;
+        }
+
+        .bar:nth-child(3) {
+            background-color: #FF6F91;
+            animation: left 1.05s ease-in infinite alternate;
+        }
+
+        .bar:nth-child(4) {
+            background-color: #FF9671;
+            animation: right 1.15s ease-in infinite alternate;
+        }
+
+        .bar:nth-child(5) {
+            background-color: #FFC75F;
+            animation: left 1.3s ease-in infinite alternate;
+        }
+
+        p {
+            color: white;
+            font-weight: bold;
+            font-size: 20px;
+            animation: show 1s ease-in infinite alternate;
+            text-align: center;
+        }
+
+
+        @keyframes left {
+            0% {
+                transform: translateX(-15px);
+            }
+
+            50% {
+                transform: translateX(-15px);
+            }
+
+            100% {
+                transform: translateX(15px);
+            }
+        }
+
+        @keyframes right {
+            0% {
+                transform: translateX(15px);
+            }
+
+            50% {
+                transform: translateX(0px);
+            }
+
+            100% {
+                transform: translateX(-15px);
+            }
+        }
+
+
+        @keyframes show {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <p>Loading...</p>
+    </div>
+</body>
+
+</html>
