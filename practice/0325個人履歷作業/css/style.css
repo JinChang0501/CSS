@@ -16,12 +16,14 @@ body {
 }
 
 .header {
-    background: #f0acac;
+    background: #ffffff;
+    height: 80px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: relative;
     z-index: 3;
+    border-bottom: 1px solid darkgray;
 
 }
 
@@ -52,7 +54,7 @@ body {
 }
 
 .navbar>ul>li {
-    background-color: palegoldenrod;
+    /* background-color: palegoldenrod; */
     padding: 10px;
     text-align: center;
 }
@@ -88,62 +90,12 @@ ol {
 
 }
 
-.sec1 {
-    background-color: rgb(237, 237, 237);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 50px;
-    /* 讓三角形不會顯示到區塊上 */
-    position: relative;
-    z-index: 3;
-}
 
-.photo {
-    width: 40%;
-    height: auto;
-    /* background-color: #cfeb12; */
-    margin-right: 10%;
-}
-
-.photo img {
-    max-width: 100%;
-    box-shadow: -15px 15px 0px rgb(226, 162, 238);
-}
-
-.description {
-    width: 50%;
-    height: auto;
-
-    /* background-color: #8b0f9f; */
-}
-
-.description h3 {
-    font-size: 36px;
-    text-shadow: 0 0 5px white;
-    margin-bottom: 20px;
-    /* 讓圓形顯示到區塊上 */
-    position: relative;
-    z-index: 5;
-}
-
-.description p {
-    font-size: 18px;
-    margin-bottom: 20px;
-}
-
-.sec2 {
-    background-color: #f5f5f5;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 50px;
-}
 
 /* whitespace */
 .whitespace {
     position: relative;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     height: 500px;
     display: flex;
     justify-content: center;
@@ -155,7 +107,7 @@ ol {
 
 .title {
     position: absolute;
-    z-index: 2;
+    z-index: 5;
 }
 
 .title h2 {
@@ -325,7 +277,146 @@ ol {
     }
 }
 
-/* 個人履歷 */
+/* 追求美感與效能的全端工程師區塊 */
+.sec1 {
+    background-color: rgb(237, 237, 237);
+    /* background-color: #8b0f9f; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    /* 讓三角形不會顯示到區塊上 */
+    position: relative;
+    z-index: 3;
+}
+
+.photo {
+    width: 40%;
+    height: auto;
+    /* background-color: #cfeb12; */
+    margin-right: 10%;
+}
+
+.photo img {
+    max-width: 100%;
+    box-shadow: -15px 15px 0px rgb(226, 162, 238);
+}
+
+.description {
+    width: 50%;
+    height: auto;
+
+    /* background-color: #8b0f9f; */
+}
+
+.description h3 {
+    font-weight: 500;
+    font-size: 2rem;
+    text-shadow: 0 0 5px white;
+    margin-bottom: 20px;
+    /* 讓圓形顯示到區塊上 */
+    position: relative;
+    z-index: 5;
+    text-shadow: 3px 3px 3px #ababab;
+}
+
+.description p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.description ol {
+    background-color: #f7f7f7;
+    margin-bottom: 20px;
+    padding: 20px;
+    /* border: 1px solid black; */
+    border-radius: 15px;
+
+}
+
+.description ol h4 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.skillcard {
+    width: 100%;
+    background: linear-gradient(#333, dimgray);
+    color: white;
+    box-sizing: border-box;
+    padding: 20px;
+    font-family: sans-serif;
+    letter-spacing: 0.1em;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+}
+
+/* .skillcard h2 {
+    text-transform: uppercase;
+    text-align: center;
+} */
+
+.skillcard .skill {
+    height: 50px;
+}
+
+.skillcard .skill:hover {
+    background-color: #267b8a;
+}
+
+.skillcard .skill span {
+    display: block;
+}
+
+.skillcard .skill .level {
+    text-align: right;
+    transform: translateY(-1em);
+    position: relative;
+}
+
+.skillcard .skill .level::after {
+    content: '';
+    position: absolute;
+    top: 1.2em;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 1px solid mediumspringgreen;
+    border-radius: 0.2em;
+    background-image: linear-gradient(to right, mediumspringgreen, mediumspringgreen);
+    background-repeat: no-repeat;
+    background-position: top 1px left 1px;
+}
+
+.skillcard .skill.html .level::after {
+    background-size: 90% 1em;
+}
+
+.skillcard .skill.css .level::after {
+    background-size: 95% 1em;
+}
+
+.skillcard .skill.javascript .level::after {
+    background-size: 80% 1em;
+}
+
+.skillcard .skill.svg .level::after {
+    background-size: 85% 1em;
+}
+
+.skillcard .skill.canvas .level::after {
+    background-size: 25% 1em;
+}
+
+.sec2 {
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+}
+
+/* 工作經歷 */
 .container2 {
     width: 80%;
     margin: auto;
@@ -350,16 +441,24 @@ ol {
 
 .date {
     font-size: 18px;
-    margin-right: 20px;
+    margin-right: 30px;
+    display: flex;
+    align-items: center;
 }
 
-/* Portolio */
-.sec3 {
-    background-color: lightyellow;
+.des p {
+    font-size: 16px;
     display: flex;
-    justify-content: center;
-    flex-direction: column;
+    align-items: center;
 }
+
+.company-logo img {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    margin-right: 30px;
+}
+
 
 
 
@@ -374,6 +473,183 @@ footer {
     font-size: 24px;
 }
 
+
+
+/* Portolio */
+.Portfolio {
+    background-color: lightyellow;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.Portfolio h2 {
+    display: flex;
+    justify-content: center;
+    font-size: 36px;
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.container3 {
+    height: 700px;
+    display: grid;
+    width: 80%;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    margin: 0 auto 100px auto;
+    gap: .625rem;
+    justify-content: center;
+}
+
+.card {
+    overflow: hidden;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
+    backface-visibility: hidden;
+
+}
+
+
+
+.side {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    transition: all 0.5s;
+}
+
+.side img {
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.back {
+    display: flex;
+    background: #c1a27a;
+    justify-content: center;
+    align-items: center;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    font-weight: bold;
+    transform: rotateY(180deg);
+    transition: transform 0.5s;
+}
+
+.fontw {
+    text-shadow: 0px 0px 10px #fff, 0px 0px 10px #fff;
+}
+
+
+.card:hover .side {
+    transform: rotateY(180deg);
+}
+
+.card:hover .back {
+    transform: rotateY(0deg);
+}
+
+.item4 {
+    grid-area: 1/3/2/5;
+}
+
+.item6 {
+    grid-area: 2/2/4/4;
+}
+
+.item10 {
+    grid-area: 3/4/4/6;
+}
+
+/* . container3 .card:nth-child(3) img {
+    height: 200px;
+    object-fit: cover;
+}
+
+.card:nth-child(9) img {
+    height: 200px;
+    object-fit: cover;
+}
+
+.card:nth-child(11) img {
+    height: 200px;
+    object-fit: cover;
+} */
+
+.card:hover .team-background {
+    opacity: 1;
+    /* 鼠标悬停时显示背景图片 */
+}
+
+.container3 .card:nth-child(1) .back {
+    background-image: url('../imgs/golden_state.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container3 .card:nth-child(2) .back {
+    background-image: url('../imgs/suns.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container3 .card:nth-child(3) .back {
+    background-image: url('../imgs/dallas.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container3 .card:nth-child(4) .back {
+    background-image: url('../imgs/76ers.jpg');
+
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container3 .card:nth-child(5) .back {
+    background-image: url('../imgs/bulls.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container3 .card:nth-child(6) .back {
+    background-image: url('../imgs/LA.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container3 .card:nth-child(7) .back {
+    background-image: url('../imgs/LA.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container3 .card:nth-child(8) .back {
+    background-image: url('../imgs/dallas.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container3 .card:nth-child(9) .back {
+    background-image: url('../imgs/bulls.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container3 .card:nth-child(10) .back {
+    background-image: url('../imgs/LA2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Contact區塊 */
 .s1 h2 {
     text-shadow: 3px 3px 5px lightgray;
     font-size: 32px;
@@ -453,176 +729,18 @@ input[type="text"]:focus {
 
 }
 
-/*  */
-.container3 {
-    display: grid;
-    width: 80%;
-    max-width: 1200px;
-    grid-template-columns: repeat(5, 200px);
-    grid-template-rows: repeat(3, 200px);
-    margin: 0 auto 100px auto;
-    gap: .625rem;
-    justify-content: center;
-}
-
-.card {
-    overflow: hidden;
-    position: relative;
-    transform-style: preserve-3d;
-    transition: transform 0.6s;
-    backface-visibility: hidden;
-
-}
-
-.side img {
-    width: 100%;
-    height: 100%;
-    max-width: 100%;
-    object-fit: cover;
-}
-
-.side {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden;
-    transition: all 0.5s;
-}
-
-.back {
-    display: flex;
-    background: #c1a27a;
-    justify-content: center;
-    align-items: center;
-    color: rgb(0, 0, 0);
-    font-size: 20px;
-    font-weight: bold;
-    transform: rotateY(180deg);
-    transition: transform 0.5s;
-}
-
-.fontw {
-    text-shadow: 0px 0px 10px #fff, 0px 0px 10px #fff;
-}
-
-
-.card:hover .side {
-    transform: rotateY(180deg);
-}
-
-.card:hover .back {
-    transform: rotateY(0deg);
-}
-
-.item4 {
-    grid-area: 1/3/2/5;
-}
-
-.item6 {
-    grid-area: 2/2/4/4;
-}
-
-/* . container3 .card:nth-child(3) img {
-    height: 200px;
-    object-fit: cover;
-}
-
-.card:nth-child(9) img {
-    height: 200px;
-    object-fit: cover;
-}
-
-.card:nth-child(11) img {
-    height: 200px;
-    object-fit: cover;
-} */
-
-.card:hover .team-background {
-    opacity: 1;
-    /* 鼠标悬停时显示背景图片 */
-}
-
-.container3 .card:nth-child(1) .back {
-    background-image: url('../imgs/golden_state.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.container3 .card:nth-child(2) .back {
-    background-image: url('../imgs/suns.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.container3 .card:nth-child(3) .back {
-    background-image: url('../imgs/dallas.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.container3 .card:nth-child(4) .back {
-    background-image: url('../imgs/76ers.jpg');
-
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.container3 .card:nth-child(5) .back {
-    background-image: url('../imgs/bulls.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.container3 .card:nth-child(6) .back {
-    background-image: url('../imgs/LA.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.container3 .card:nth-child(7) .back {
-    background-image: url('../imgs/LA.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.container3 .card:nth-child(8) .back {
-    background-image: url('../imgs/dallas.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.container3 .card:nth-child(9) .back {
-    background-image: url('../imgs/bulls.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.container3 .card:nth-child(10) .back {
-    background-image: url('../imgs/LA.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.container3 .card:nth-child(11) .back {
-    background-image: url('../imgs/bulls.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.sec3 h2 {
-    display: flex;
-    justify-content: center;
-    font-size: 36px;
-
-    width: 100%;
-    margin-top: 30px;
-    margin-bottom: 30px;
-}
-
 /* 手機 */
 @media screen and (max-width: 500px) {
+    .container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sec1 {
+        width: 100%;
+    }
+
     .header {
         flex-wrap: wrap;
         align-items: stretch;
@@ -677,10 +795,13 @@ input[type="text"]:focus {
 
     .w-50 {
         width: 100%;
+        display: flex;
+        justify-content: center;
     }
 
     #ContactForm {
         margin-top: 30px;
+        width: 80%;
     }
 
     /* Cubes */
@@ -696,7 +817,7 @@ input[type="text"]:focus {
     .triangle {
         position: absolute;
         left: 50px;
-        top: 50px;
+        top: 150px;
         border-width: 0 60px 103.9px 60px;
     }
 
@@ -721,7 +842,6 @@ input[type="text"]:focus {
         justify-content: center;
         align-items: center;
         background-color: #82bef2;
-
         width: 80px;
         height: 120px;
         background-color: rgb(237, 237, 237);
@@ -730,4 +850,29 @@ input[type="text"]:focus {
         /* transform: rotate(45deg); */
         animation: heartbeat 2s ease-in infinite alternate;
     }
+
+    .Portfolio .container3 {
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .card {
+        width: 46%;
+        height: 200px;
+        max-height: 100%;
+    }
+
+    .container3 .card:nth-child(10) .back {
+        background-image: url('../imgs/LA.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .title {
+        position: relative;
+        top: 10%;
+    }
+
+
 }
